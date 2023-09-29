@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://farmingTilesheetComplete.png" type="Texture" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Scripts/world.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/sell_zone.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/shop.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Scenes/berry_seedpack.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/chicken.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/weather_control.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Scenes/day_night.tscn" type="PackedScene" id=12]
@@ -281,6 +280,30 @@
 18/shapes = [  ]
 18/z_index = 0
 
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 16, 16, 0, 16, 0, 0, 16, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
 [sub_resource type="TileSet" id=2]
 0/name = "farmingTilesheetComplete.png 0"
 0/texture = ExtResource( 2 )
@@ -488,9 +511,16 @@
 14/navigation_offset = Vector2( 0, 0 )
 14/shape_offset = Vector2( 0, 0 )
 14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 13 )
 14/shape_one_way = false
-14/shape_one_way_margin = 0.0
-14/shapes = [  ]
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 14/z_index = 0
 15/name = "farmingTilesheetComplete.png 15"
 15/texture = ExtResource( 2 )
@@ -502,9 +532,16 @@
 15/navigation_offset = Vector2( 0, 0 )
 15/shape_offset = Vector2( 0, 0 )
 15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 14 )
 15/shape_one_way = false
-15/shape_one_way_margin = 0.0
-15/shapes = [  ]
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 15/z_index = 0
 16/name = "farmingTilesheetComplete.png 16"
 16/texture = ExtResource( 2 )
@@ -516,9 +553,16 @@
 16/navigation_offset = Vector2( 0, 0 )
 16/shape_offset = Vector2( 0, 0 )
 16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape = SubResource( 15 )
 16/shape_one_way = false
-16/shape_one_way_margin = 0.0
-16/shapes = [  ]
+16/shape_one_way_margin = 1.0
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 16/z_index = 0
 17/name = "farmingTilesheetComplete.png 17"
 17/texture = ExtResource( 2 )
@@ -530,9 +574,16 @@
 17/navigation_offset = Vector2( 0, 0 )
 17/shape_offset = Vector2( 0, 0 )
 17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape = SubResource( 16 )
 17/shape_one_way = false
-17/shape_one_way_margin = 0.0
-17/shapes = [  ]
+17/shape_one_way_margin = 1.0
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 17/z_index = 0
 18/name = "farmingTilesheetComplete.png 18"
 18/texture = ExtResource( 2 )
@@ -544,9 +595,16 @@
 18/navigation_offset = Vector2( 0, 0 )
 18/shape_offset = Vector2( 0, 0 )
 18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape = SubResource( 17 )
 18/shape_one_way = false
-18/shape_one_way_margin = 0.0
-18/shapes = [  ]
+18/shape_one_way_margin = 1.0
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 18/z_index = 0
 19/name = "farmingTilesheetComplete.png 19"
 19/texture = ExtResource( 2 )
@@ -558,9 +616,16 @@
 19/navigation_offset = Vector2( 0, 0 )
 19/shape_offset = Vector2( 0, 0 )
 19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape = SubResource( 18 )
 19/shape_one_way = false
-19/shape_one_way_margin = 0.0
-19/shapes = [  ]
+19/shape_one_way_margin = 1.0
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 19/z_index = 0
 20/name = "farmingTilesheetComplete.png 20"
 20/texture = ExtResource( 2 )
@@ -572,9 +637,16 @@
 20/navigation_offset = Vector2( 0, 0 )
 20/shape_offset = Vector2( 0, 0 )
 20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape = SubResource( 20 )
 20/shape_one_way = false
-20/shape_one_way_margin = 0.0
-20/shapes = [  ]
+20/shape_one_way_margin = 1.0
+20/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 20/z_index = 0
 21/name = "farmingTilesheetComplete.png 21"
 21/texture = ExtResource( 2 )
@@ -586,9 +658,16 @@
 21/navigation_offset = Vector2( 0, 0 )
 21/shape_offset = Vector2( 0, 0 )
 21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape = SubResource( 21 )
 21/shape_one_way = false
-21/shape_one_way_margin = 0.0
-21/shapes = [  ]
+21/shape_one_way_margin = 1.0
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 21 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 21/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=9]
@@ -821,8 +900,9 @@ tile_data = PoolIntArray( 0, 4, 0, 1, 4, 0, 2, 4, 0, 3, 4, 0, 4, 4, 0, 5, 4, 0, 
 [node name="foreground" type="TileMap" parent="area1"]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 16, 16 )
+collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 131083, 1610612748, 0, 196619, 4, 0, 262155, 7, 0, 262156, 10, 0, 262157, 10, 0, 262158, 10, 0, 262159, 10, 0, 262160, 10, 0, 262161, 10, 0, 262162, 10, 0, 262163, 1, 0, 327688, 1610612748, 0, 327689, 1610612744, 0, 327690, 1610612744, 0, 327691, 1, 0, 327692, 1610612744, 0, 327693, 1610612744, 0, 327694, 1610612744, 0, 327695, 1610612744, 0, 327696, 1610612744, 0, 327697, 1610612744, 0, 327698, 1610612744, 0, 327699, 1610612740, 0, 393216, 11, 0, 393217, 10, 0, 393218, 10, 0, 393219, 10, 0, 393220, 10, 0, 393221, 10, 0, 393222, 10, 0, 393223, 10, 0, 393224, 10, 0, 393225, -1073741820, 0, 393226, -1073741820, 0, 393227, -1073741817, 0, 393228, 0, 0, 393229, 8, 0, 393230, 8, 0, 393231, 8, 0, 393232, 8, 0, 393233, 8, 0, 393234, 8, 0, 393235, 1610612737, 0, 458764, 12, 0, 524297, 14, 0, 524298, 19, 0, 524299, 19, 0, 524300, 20, 0, 524301, 19, 0, 524302, 19, 0, 524303, 17, 0, 589833, 21, 0, 589839, 21, 0, 655369, 15, 0, 655370, 16, 0, 655371, 16, 0, 655372, 16, 0, 655373, 16, 0, 655374, 16, 0, 655375, 18, 0 )
+tile_data = PoolIntArray( 131083, 1610612748, 0, 196619, 4, 0, 262155, 7, 0, 262156, 10, 0, 262157, 10, 0, 262158, 10, 0, 262159, 10, 0, 262160, 10, 0, 262161, 10, 0, 262162, 10, 0, 262163, 1, 0, 327688, 1610612748, 0, 327689, 1610612744, 0, 327690, 1610612744, 0, 327691, -1610612732, 0, 327692, 1610612744, 0, 327693, 1610612744, 0, 327694, 1610612744, 0, 327695, 1610612744, 0, 327696, 1610612744, 0, 327697, 1610612744, 0, 327698, 1610612744, 0, 327699, 1610612740, 0, 393216, 11, 0, 393217, 10, 0, 393218, 10, 0, 393219, 10, 0, 393220, 10, 0, 393221, 10, 0, 393222, 10, 0, 393223, 10, 0, 393224, 10, 0, 393225, -1073741820, 0, 393226, -1073741820, 0, 393227, -1073741817, 0, 393228, 0, 0, 393229, 8, 0, 393230, 8, 0, 393231, 8, 0, 393232, 8, 0, 393233, 8, 0, 393234, 8, 0, 393235, 1610612737, 0, 458764, 12, 0, 524297, 14, 0, 524298, 19, 0, 524299, 19, 0, 524300, 20, 0, 524301, 19, 0, 524302, 19, 0, 524303, 17, 0, 589833, 21, 0, 589839, 21, 0, 655369, 15, 0, 655370, 16, 0, 655371, 16, 0, 655372, 16, 0, 655373, 16, 0, 655374, 16, 0, 655375, 18, 0 )
 
 [node name="growing_zones" type="StaticBody2D" parent="area1"]
 
@@ -878,9 +958,11 @@ position = Vector2( 83, 154 )
 
 [node name="chicken" parent="area1/animals" instance=ExtResource( 10 )]
 position = Vector2( 234, 147 )
+collision_layer = 2
+collision_mask = 6
 
 [node name="sell_zone" parent="area1" instance=ExtResource( 7 )]
-position = Vector2( 232, 18 )
+position = Vector2( 219, 19 )
 
 [node name="shop" parent="area1" instance=ExtResource( 8 )]
 position = Vector2( 186, 14 )
@@ -986,7 +1068,8 @@ anims/RESET = SubResource( 11 )
 anims/build_field = SubResource( 12 )
 
 [node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 28, 157 )
+position = Vector2( 219, 66 )
+collision_mask = 6
 
 [node name="overlay" type="Node2D" parent="."]
 
@@ -1045,13 +1128,10 @@ current = true
 [node name="seed_packs" type="StaticBody2D" parent="."]
 
 [node name="onion_seedpack" parent="seed_packs" instance=ExtResource( 3 )]
-position = Vector2( 148, 80 )
+position = Vector2( 174, 80 )
 
 [node name="carrot_seedpack" parent="seed_packs" instance=ExtResource( 5 )]
-position = Vector2( 111, 94 )
-
-[node name="berry_seedpack" parent="seed_packs" instance=ExtResource( 9 )]
-position = Vector2( 129, 126 )
+position = Vector2( 171, 57 )
 
 [node name="day_night" parent="." instance=ExtResource( 12 )]
 visible = false
