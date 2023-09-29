@@ -1,0 +1,1061 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://Scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://farmingTilesheetComplete.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/onion_seedpack.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/growingzone.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/carrot_seedpack.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/world.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/sell_zone.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/shop.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/berry_seedpack.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/chicken.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/weather_control.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/day_night.tscn" type="PackedScene" id=12]
+
+[sub_resource type="TileSet" id=1]
+0/name = "farmingTilesheetComplete.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 96, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "farmingTilesheetComplete.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 16, 96, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "farmingTilesheetComplete.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 32, 96, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "farmingTilesheetComplete.png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 112, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "farmingTilesheetComplete.png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 16, 112, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "farmingTilesheetComplete.png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 32, 112, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "farmingTilesheetComplete.png 6"
+6/texture = ExtResource( 2 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 128, 16, 16 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "farmingTilesheetComplete.png 7"
+7/texture = ExtResource( 2 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 16, 128, 16, 16 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "farmingTilesheetComplete.png 8"
+8/texture = ExtResource( 2 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 32, 128, 16, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "farmingTilesheetComplete.png 9"
+9/texture = ExtResource( 2 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 48, 96, 16, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "farmingTilesheetComplete.png 10"
+10/texture = ExtResource( 2 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 64, 96, 16, 16 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "farmingTilesheetComplete.png 11"
+11/texture = ExtResource( 2 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 80, 96, 16, 16 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "farmingTilesheetComplete.png 12"
+12/texture = ExtResource( 2 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 48, 112, 16, 16 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "farmingTilesheetComplete.png 13"
+13/texture = ExtResource( 2 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 96, 112, 16, 16 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "farmingTilesheetComplete.png 14"
+14/texture = ExtResource( 2 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 80, 112, 16, 16 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
+15/name = "farmingTilesheetComplete.png 15"
+15/texture = ExtResource( 2 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 48, 128, 16, 16 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape_one_way = false
+15/shape_one_way_margin = 0.0
+15/shapes = [  ]
+15/z_index = 0
+16/name = "farmingTilesheetComplete.png 16"
+16/texture = ExtResource( 2 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 64, 128, 16, 16 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape_one_way = false
+16/shape_one_way_margin = 0.0
+16/shapes = [  ]
+16/z_index = 0
+17/name = "farmingTilesheetComplete.png 17"
+17/texture = ExtResource( 2 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 80, 128, 16, 16 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape_one_way = false
+17/shape_one_way_margin = 0.0
+17/shapes = [  ]
+17/z_index = 0
+18/name = "farmingTilesheetComplete.png 18"
+18/texture = ExtResource( 2 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 192, 80, 16, 16 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape_one_way = false
+18/shape_one_way_margin = 0.0
+18/shapes = [  ]
+18/z_index = 0
+
+[sub_resource type="TileSet" id=2]
+0/name = "farmingTilesheetComplete.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 160, 128, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "farmingTilesheetComplete.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 176, 128, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "farmingTilesheetComplete.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 192, 128, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "farmingTilesheetComplete.png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 160, 144, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "farmingTilesheetComplete.png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 176, 144, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "farmingTilesheetComplete.png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 192, 144, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "farmingTilesheetComplete.png 6"
+6/texture = ExtResource( 2 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 160, 160, 16, 16 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "farmingTilesheetComplete.png 7"
+7/texture = ExtResource( 2 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 176, 160, 16, 16 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "farmingTilesheetComplete.png 8"
+8/texture = ExtResource( 2 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 192, 160, 16, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "farmingTilesheetComplete.png 9"
+9/texture = ExtResource( 2 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 144, 128, 16, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "farmingTilesheetComplete.png 10"
+10/texture = ExtResource( 2 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 128, 128, 16, 16 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "farmingTilesheetComplete.png 11"
+11/texture = ExtResource( 2 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 112, 128, 16, 16 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "farmingTilesheetComplete.png 12"
+12/texture = ExtResource( 2 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 96, 128, 16, 16 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "farmingTilesheetComplete.png 13"
+13/texture = ExtResource( 2 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 176, 32, 32 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "farmingTilesheetComplete.png 14"
+14/texture = ExtResource( 2 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 128, 96, 16, 16 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
+15/name = "farmingTilesheetComplete.png 15"
+15/texture = ExtResource( 2 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 128, 112, 16, 16 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape_one_way = false
+15/shape_one_way_margin = 0.0
+15/shapes = [  ]
+15/z_index = 0
+16/name = "farmingTilesheetComplete.png 16"
+16/texture = ExtResource( 2 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 176, 96, 16, 16 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape_one_way = false
+16/shape_one_way_margin = 0.0
+16/shapes = [  ]
+16/z_index = 0
+17/name = "farmingTilesheetComplete.png 17"
+17/texture = ExtResource( 2 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 192, 96, 16, 16 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape_one_way = false
+17/shape_one_way_margin = 0.0
+17/shapes = [  ]
+17/z_index = 0
+18/name = "farmingTilesheetComplete.png 18"
+18/texture = ExtResource( 2 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 192, 112, 16, 16 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape_one_way = false
+18/shape_one_way_margin = 0.0
+18/shapes = [  ]
+18/z_index = 0
+19/name = "farmingTilesheetComplete.png 19"
+19/texture = ExtResource( 2 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 144, 112, 16, 16 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape_one_way = false
+19/shape_one_way_margin = 0.0
+19/shapes = [  ]
+19/z_index = 0
+20/name = "farmingTilesheetComplete.png 20"
+20/texture = ExtResource( 2 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 144, 96, 16, 16 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shape_offset = Vector2( 0, 0 )
+20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape_one_way = false
+20/shape_one_way_margin = 0.0
+20/shapes = [  ]
+20/z_index = 0
+21/name = "farmingTilesheetComplete.png 21"
+21/texture = ExtResource( 2 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 112, 112, 16, 16 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape_one_way = false
+21/shape_one_way_margin = 0.0
+21/shapes = [  ]
+21/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 10, 96.5 )
+
+[sub_resource type="TileSet" id=10]
+0/name = "farmingTilesheetComplete.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 48, 96, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "farmingTilesheetComplete.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 96, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "farmingTilesheetComplete.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 80, 96, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "farmingTilesheetComplete.png 3"
+3/texture = ExtResource( 2 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 48, 112, 16, 16 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "farmingTilesheetComplete.png 4"
+4/texture = ExtResource( 2 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 96, 112, 16, 16 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "farmingTilesheetComplete.png 5"
+5/texture = ExtResource( 2 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 80, 112, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "farmingTilesheetComplete.png 6"
+6/texture = ExtResource( 2 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 48, 128, 16, 16 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "farmingTilesheetComplete.png 7"
+7/texture = ExtResource( 2 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 64, 128, 16, 16 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "farmingTilesheetComplete.png 8"
+8/texture = ExtResource( 2 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 80, 128, 16, 16 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "farmingTilesheetComplete.png 9"
+9/texture = ExtResource( 2 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 192, 80, 16, 16 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+
+[sub_resource type="Animation" id=11]
+length = 1.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("area2/ColorRect:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 143, 131 ), Vector2( 0, 131 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "build_field"
+length = 1.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("area2/ColorRect:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 143, 131 ), Vector2( 0, 131 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 160, 48, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 32, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 80, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 80, 48, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "berry",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "carrot",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 6 ) ],
+"loop": true,
+"name": "coin",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ) ],
+"loop": true,
+"name": "onion",
+"speed": 5.0
+} ]
+
+[node name="world" type="Node2D"]
+position = Vector2( 1, 5 )
+script = ExtResource( 6 )
+
+[node name="area1" type="StaticBody2D" parent="."]
+
+[node name="background" type="TileMap" parent="area1"]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 0, 4, 0, 1, 4, 0, 2, 4, 0, 3, 4, 0, 4, 4, 0, 5, 4, 0, 6, 4, 0, 7, 4, 0, 8, 4, 0, 9, 4, 0, 10, 4, 0, 11, 4, 0, 12, 4, 0, 13, 4, 0, 14, 4, 0, 15, 4, 0, 16, 4, 0, 17, 4, 0, 18, 4, 0, 19, 4, 0, 65536, 4, 0, 65537, 4, 0, 65538, 4, 0, 65539, 4, 0, 65540, 4, 0, 65541, 4, 0, 65542, 4, 0, 65543, 4, 0, 65544, 4, 0, 65545, 4, 0, 65546, 4, 0, 65547, 4, 0, 65548, 4, 0, 65549, 4, 0, 65550, 4, 0, 65551, 4, 0, 65552, 4, 0, 65553, 4, 0, 65554, 4, 0, 65555, 4, 0, 131072, 4, 0, 131073, 9, 0, 131074, 10, 0, 131075, 10, 0, 131076, 10, 0, 131077, 10, 0, 131078, 10, 0, 131079, 11, 0, 131080, 4, 0, 131081, 4, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 4, 0, 131086, 4, 0, 131087, 4, 0, 131088, 4, 0, 131089, 4, 0, 131090, 4, 0, 131091, 4, 0, 196608, 4, 0, 196609, 12, 0, 196610, 13, 0, 196611, 13, 0, 196612, 13, 0, 196613, 13, 0, 196614, 13, 0, 196615, 14, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 196624, 4, 0, 196625, 4, 0, 196626, 4, 0, 196627, 4, 0, 262144, 4, 0, 262145, 12, 0, 262146, 13, 0, 262147, 13, 0, 262148, 13, 0, 262149, 13, 0, 262150, 13, 0, 262151, 14, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 262160, 4, 0, 262161, 4, 0, 262162, 4, 0, 262163, 4, 0, 327680, 4, 0, 327681, 15, 0, 327682, 16, 0, 327683, 16, 0, 327684, 16, 0, 327685, 16, 0, 327686, 16, 0, 327687, 17, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 327696, 4, 0, 327697, 4, 0, 327698, 4, 0, 327699, 4, 0, 393216, -1073741820, 0, 393217, -1073741820, 0, 393218, -1073741820, 0, 393219, -1073741820, 0, 393220, -1073741820, 0, 393221, -1073741820, 0, 393222, -1073741820, 0, 393223, -1073741820, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 393232, 4, 0, 393233, 4, 0, 393234, 4, 0, 393235, 4, 0, 458752, 4, 0, 458753, -1073741813, 0, 458754, -1073741810, 0, 458755, -1073741810, 0, 458756, -1073741810, 0, 458757, -1073741810, 0, 458758, -1073741810, 0, 458759, -1073741807, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 4, 0, 458767, 4, 0, 458768, 4, 0, 458769, 4, 0, 458770, 4, 0, 458771, 4, 0, 524288, 4, 0, 524289, -1073741814, 0, 524290, -1073741811, 0, 524291, -1073741811, 0, 524292, -1073741811, 0, 524293, -1073741811, 0, 524294, -1073741811, 0, 524295, -1073741808, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 4, 0, 524303, 4, 0, 524304, 4, 0, 524305, 4, 0, 524306, 4, 0, 524307, 4, 0, 589824, 4, 0, 589825, -1073741814, 0, 589826, -1073741811, 0, 589827, -1073741811, 0, 589828, -1073741811, 0, 589829, -1073741811, 0, 589830, -1073741811, 0, 589831, -1073741808, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0, 589840, 4, 0, 589841, 4, 0, 589842, 4, 0, 589843, 4, 0, 655360, 4, 0, 655361, -1073741815, 0, 655362, -1073741812, 0, 655363, -1073741812, 0, 655364, -1073741812, 0, 655365, -1073741812, 0, 655366, -1073741812, 0, 655367, -1073741809, 0, 655368, 4, 0, 655369, 4, 0, 655370, 4, 0, 655371, 4, 0, 655372, 4, 0, 655373, 4, 0, 655374, 4, 0, 655375, 4, 0, 655376, 4, 0, 655377, 4, 0, 655378, 4, 0, 655379, 4, 0 )
+
+[node name="foreground" type="TileMap" parent="area1"]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 131083, 1610612748, 0, 196619, 4, 0, 262155, 7, 0, 262156, 10, 0, 262157, 10, 0, 262158, 10, 0, 262159, 10, 0, 262160, 10, 0, 262161, 10, 0, 262162, 10, 0, 262163, 1, 0, 327688, 1610612748, 0, 327689, 1610612744, 0, 327690, 1610612744, 0, 327691, 1, 0, 327692, 1610612744, 0, 327693, 1610612744, 0, 327694, 1610612744, 0, 327695, 1610612744, 0, 327696, 1610612744, 0, 327697, 1610612744, 0, 327698, 1610612744, 0, 327699, 1610612740, 0, 393216, 11, 0, 393217, 10, 0, 393218, 10, 0, 393219, 10, 0, 393220, 10, 0, 393221, 10, 0, 393222, 10, 0, 393223, 10, 0, 393224, 10, 0, 393225, -1073741820, 0, 393226, -1073741820, 0, 393227, -1073741817, 0, 393228, 0, 0, 393229, 8, 0, 393230, 8, 0, 393231, 8, 0, 393232, 8, 0, 393233, 8, 0, 393234, 8, 0, 393235, 1610612737, 0, 458764, 12, 0, 524297, 14, 0, 524298, 19, 0, 524299, 19, 0, 524300, 20, 0, 524301, 19, 0, 524302, 19, 0, 524303, 17, 0, 589833, 21, 0, 589839, 21, 0, 655369, 15, 0, 655370, 16, 0, 655371, 16, 0, 655372, 16, 0, 655373, 16, 0, 655374, 16, 0, 655375, 18, 0 )
+
+[node name="growing_zones" type="StaticBody2D" parent="area1"]
+
+[node name="growingzone" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 61, 53 )
+
+[node name="growingzone2" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 105, 53 )
+
+[node name="growingzone3" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 39, 53 )
+
+[node name="growingzone4" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 83, 53 )
+
+[node name="growingzone5" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 61, 73 )
+
+[node name="growingzone6" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 105, 73 )
+
+[node name="growingzone7" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 39, 73 )
+
+[node name="growingzone8" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 83, 73 )
+
+[node name="growingzone9" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 61, 134 )
+
+[node name="growingzone10" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 105, 134 )
+
+[node name="growingzone11" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 39, 134 )
+
+[node name="growingzone12" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 83, 134 )
+
+[node name="growingzone13" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 61, 154 )
+
+[node name="growingzone14" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 105, 154 )
+
+[node name="growingzone15" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 39, 154 )
+
+[node name="growingzone16" parent="area1/growing_zones" instance=ExtResource( 4 )]
+position = Vector2( 83, 154 )
+
+[node name="animals" type="Node2D" parent="area1"]
+
+[node name="chicken" parent="area1/animals" instance=ExtResource( 10 )]
+position = Vector2( 234, 147 )
+
+[node name="sell_zone" parent="area1" instance=ExtResource( 7 )]
+position = Vector2( 232, 18 )
+
+[node name="shop" parent="area1" instance=ExtResource( 8 )]
+position = Vector2( 186, 14 )
+
+[node name="area2" type="StaticBody2D" parent="."]
+
+[node name="open_farming_zone2" type="Area2D" parent="area2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="area2/open_farming_zone2"]
+position = Vector2( 13, 89 )
+shape = SubResource( 9 )
+
+[node name="TileMap" type="TileMap" parent="area2"]
+tile_set = SubResource( 10 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65522, 9, 0, 65523, 9, 0, 65524, 9, 0, 65525, 9, 0, 65526, 9, 0, 65527, 9, 0, 65528, 9, 0, 65529, 9, 0, 65530, 9, 0, 65531, 9, 0, 65532, 9, 0, 65533, 9, 0, 65534, 9, 0, 65535, 9, 0, 131058, 9, 0, 131059, 9, 0, 131060, 0, 0, 131061, 1, 0, 131062, 1, 0, 131063, 1, 0, 131064, 1, 0, 131065, 1, 0, 131066, 1, 0, 131067, 1, 0, 131068, 1, 0, 131069, 2, 0, 131070, 9, 0, 131071, 9, 0, 196594, 9, 0, 196595, 9, 0, 196596, 3, 0, 196597, 4, 0, 196598, 4, 0, 196599, 4, 0, 196600, 4, 0, 196601, 4, 0, 196602, 4, 0, 196603, 4, 0, 196604, 4, 0, 196605, 5, 0, 196606, 9, 0, 196607, 9, 0, 262130, 9, 0, 262131, 9, 0, 262132, 3, 0, 262133, 4, 0, 262134, 4, 0, 262135, 4, 0, 262136, 4, 0, 262137, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 262141, 5, 0, 262142, 9, 0, 262143, 9, 0, 327666, 9, 0, 327667, 9, 0, 327668, 6, 0, 327669, 7, 0, 327670, 7, 0, 327671, 7, 0, 327672, 7, 0, 327673, 7, 0, 327674, 7, 0, 327675, 7, 0, 327676, 7, 0, 327677, 8, 0, 327678, 9, 0, 327679, 9, 0, 393202, 9, 0, 393203, 9, 0, 393204, 9, 0, 393205, 9, 0, 393206, 9, 0, 393207, 9, 0, 393208, 9, 0, 393209, 9, 0, 393210, 9, 0, 393211, 9, 0, 393212, 9, 0, 393213, 9, 0, 393214, 9, 0, 393215, 9, 0, 458738, 9, 0, 458739, 9, 0, 458740, 0, 0, 458741, 1, 0, 458742, 1, 0, 458743, 1, 0, 458744, 1, 0, 458745, 1, 0, 458746, 1, 0, 458747, 1, 0, 458748, 1, 0, 458749, 2, 0, 458750, 9, 0, 458751, 9, 0, 524274, 9, 0, 524275, 9, 0, 524276, 3, 0, 524277, 4, 0, 524278, 4, 0, 524279, 4, 0, 524280, 4, 0, 524281, 4, 0, 524282, 4, 0, 524283, 4, 0, 524284, 4, 0, 524285, 5, 0, 524286, 9, 0, 524287, 9, 0, 589810, 9, 0, 589811, 9, 0, 589812, 3, 0, 589813, 4, 0, 589814, 4, 0, 589815, 4, 0, 589816, 4, 0, 589817, 4, 0, 589818, 4, 0, 589819, 4, 0, 589820, 4, 0, 589821, 5, 0, 589822, 9, 0, 589823, 9, 0, 655346, 9, 0, 655347, 9, 0, 655348, 6, 0, 655349, 7, 0, 655350, 7, 0, 655351, 7, 0, 655352, 7, 0, 655353, 7, 0, 655354, 7, 0, 655355, 7, 0, 655356, 7, 0, 655357, 8, 0, 655358, 9, 0, 655359, 9, 0, 720882, 9, 0, 720883, 9, 0, 720884, 9, 0, 720885, 9, 0, 720886, 9, 0, 720887, 9, 0, 720888, 9, 0, 720889, 9, 0, 720890, 9, 0, 720891, 9, 0, 720892, 9, 0, 720893, 9, 0, 720894, 9, 0, 720895, 9, 0 )
+
+[node name="growing_zones2" type="StaticBody2D" parent="area2"]
+
+[node name="growingzone" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -145, 38 )
+
+[node name="growingzone2" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -101, 38 )
+
+[node name="growingzone3" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -167, 38 )
+
+[node name="growingzone4" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -123, 38 )
+
+[node name="growingzone5" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -145, 58 )
+
+[node name="growingzone6" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -101, 58 )
+
+[node name="growingzone7" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -167, 58 )
+
+[node name="growingzone8" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -123, 58 )
+
+[node name="growingzone9" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -56, 38 )
+
+[node name="growingzone10" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -78, 38 )
+
+[node name="growingzone11" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -56, 58 )
+
+[node name="growingzone12" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -78, 58 )
+
+[node name="growingzone13" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -145, 118 )
+
+[node name="growingzone14" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -101, 118 )
+
+[node name="growingzone15" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -167, 118 )
+
+[node name="growingzone16" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -123, 118 )
+
+[node name="growingzone17" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -145, 138 )
+
+[node name="growingzone18" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -101, 138 )
+
+[node name="growingzone19" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -167, 138 )
+
+[node name="growingzone20" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -123, 138 )
+
+[node name="growingzone21" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -56, 118 )
+
+[node name="growingzone22" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -78, 118 )
+
+[node name="growingzone23" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -56, 138 )
+
+[node name="growingzone24" parent="area2/growing_zones2" instance=ExtResource( 4 )]
+position = Vector2( -78, 138 )
+
+[node name="ColorRect" type="ColorRect" parent="area2"]
+margin_left = -184.0
+margin_top = 22.0
+margin_right = -41.0
+margin_bottom = 153.0
+color = Color( 0.6, 0.898039, 0.313726, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="area2"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 11 )
+anims/build_field = SubResource( 12 )
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 28, 157 )
+
+[node name="overlay" type="Node2D" parent="."]
+
+[node name="carrot_text" type="RichTextLabel" parent="overlay"]
+margin_left = 298.0
+margin_top = 122.0
+margin_right = 338.0
+margin_bottom = 162.0
+text = "= 0"
+
+[node name="carrot_icon" type="AnimatedSprite" parent="overlay"]
+position = Vector2( 286, 128 )
+frames = SubResource( 5 )
+animation = "carrot"
+
+[node name="onion_text" type="RichTextLabel" parent="overlay"]
+margin_left = 297.0
+margin_top = 143.0
+margin_right = 337.0
+margin_bottom = 183.0
+text = "= 0"
+
+[node name="onion_icon" type="AnimatedSprite" parent="overlay"]
+position = Vector2( 285, 147 )
+frames = SubResource( 5 )
+animation = "onion"
+
+[node name="berry_text" type="RichTextLabel" parent="overlay"]
+margin_left = 297.0
+margin_top = 163.0
+margin_right = 337.0
+margin_bottom = 203.0
+text = "= 0"
+
+[node name="berry_icon" type="AnimatedSprite" parent="overlay"]
+position = Vector2( 285, 167 )
+frames = SubResource( 5 )
+animation = "berry"
+
+[node name="coin_text" type="RichTextLabel" parent="overlay"]
+margin_left = 279.0
+margin_top = 9.0
+margin_right = 319.0
+margin_bottom = 49.0
+text = "= 0"
+
+[node name="coin_icon" type="AnimatedSprite" parent="overlay"]
+position = Vector2( 266, 15 )
+frames = SubResource( 5 )
+animation = "coin"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -62, 89 )
+current = true
+
+[node name="seed_packs" type="StaticBody2D" parent="."]
+
+[node name="onion_seedpack" parent="seed_packs" instance=ExtResource( 3 )]
+position = Vector2( 148, 80 )
+
+[node name="carrot_seedpack" parent="seed_packs" instance=ExtResource( 5 )]
+position = Vector2( 111, 94 )
+
+[node name="berry_seedpack" parent="seed_packs" instance=ExtResource( 9 )]
+position = Vector2( 129, 126 )
+
+[node name="day_night" parent="." instance=ExtResource( 12 )]
+visible = false
+
+[node name="weather_control" parent="." instance=ExtResource( 11 )]
+
+[connection signal="body_entered" from="area2/open_farming_zone2" to="." method="_on_open_farming_zone2_body_entered"]
